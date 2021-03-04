@@ -1,5 +1,3 @@
-<h1><%= @school_class.title %></h1> | <p><%= @school_class.room_number %></p> 
-
-string   "name"
-  integer  "artist_id"
-  integer  "genre_id" 
+<h1><%= @song.name %></h1> 
+<%= link_to @song.artist.name, artist_path(@song.artist) if @song.artist %>
+<%= link_to @song.genre.name, genre_path(@song.genre) if @song.genre %>

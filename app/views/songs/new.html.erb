@@ -1,14 +1,18 @@
-<h3>School Class Form</h3>
+<h3>song Form</h3>
 
-<%= form_for(@school_class) do |f| %>
-  <label>Title:</label><br>
-  <%= f.text_field :title %><br>
+<%= form_for(@song) do |f| %>
+  <label>Song Name:</label><br>
+  <%= f.text_field :name %><br>
 
-  <label>Room Number:</label><br>
-  <%= f.number_field :room_number %><br>
+  <label>Artist ID:</label><br>
+  <%= f.number_field :artist_id %><br>
+
+  <label>Genre ID:</label><br>
+  <%= f.number_field :genre_id %><br>
   
   <%= f.submit %>
 
-  string   "name"
-  integer  "artist_id"
-  integer  "genre_id" 
+  <% end %>
+  </form>
+
+   
